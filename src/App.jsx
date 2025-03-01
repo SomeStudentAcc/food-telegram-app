@@ -1,19 +1,18 @@
-import { useEffect } from "react"
-import useTelegram from "./hooks/UseTelegram"
+import { useEffect } from "react";
+import useTelegram from "./hooks/UseTelegram";
 
 function App() {
-  const {onToggleButton, tg} = useTelegram()
-  
-  useEffect(()=>{
-    tg.ready()
-  }, [])
+  const { onToggleButton, tg } = useTelegram();
 
+  useEffect(() => {
+    tg.ready();
+  }, []);
 
   return (
     <>
-    <button onClick={onToggleButton}>toggle</button>
+      <button onClick={onToggleButton}>toggle</button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
