@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-    <Header/>
+      <Header />
       <button onClick={onToggleButton}>toggle</button>
     </>
   );
