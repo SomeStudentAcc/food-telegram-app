@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Button({props}) {
   return (
-    <button className={'button '+ props.className}>
+    <button onClick={props.onClick} className={'button '+ props.className}>
+        close
 
     </button>
   )
