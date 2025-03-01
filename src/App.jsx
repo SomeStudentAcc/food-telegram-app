@@ -1,7 +1,8 @@
 import { useEffect } from "react"
+import useTelegram from "./hooks/UseTelegram"
 
-const tg = window.Telegram.WebApp
 function App() {
+  const {onToggleButton, tg} = useTelegram()
   
   useEffect(()=>{
     tg.ready()
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <>
-     <div>hello</div>
+    <button onClick={onToggleButton}>toggle</button>
     </>
   )
 }
